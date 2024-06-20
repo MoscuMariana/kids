@@ -30,53 +30,61 @@
      
   </head>
   <body>
-    <div id="wrapper">
-      <div class="wrapper-holder">
-        <div class="header-holder">
-          <header id="header">
-            <span class="logo"><a href="index.html">MSK</a></span>
-            <div class="tools-nav_holder"></div>
-            <div class="clear"></div>
-            <a class="menu_trigger" href="#">menu</a>
-            <nav id="nav">
-              <ul class="navi">
-                <li class="searc_li">
-                  <div class="ul_search li">
-                    <a class="search" href="#"><span>search</span></a>
-                    <form method="get" class="searchform" action="#">
-                      <input
-                        type="text"
-                        class="field"
-                        name="s"
-                        id="s"
-                        placeholder="What are you looking for?"
-                      />
-                      <input type="submit" class="submit" value="" />
-                      <div class="clear"></div>
-                    </form>
-                  </div>
-                </li>
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="diplome.html">Diplome </a></li>
-                <li><a href="grupamica.html">Fișe Grupa mică</a></li>
-                <li><a href="grupamijlocie.html">Fișe Grupa mijlocie</a></li>
-                <li><a href="grupamare.html">Fișe Grupa mare</a></li>
-              </ul>
-              <div class="ul_search">
-                <a class="search" href="#"><span>Caută</span></a>
-                <form method="get" class="searchform" action="#">
-                  <input
-                    type="text"
-                    class="field"
-                    name="s"
-                    id="s"
-                    placeholder="Ce cauti?"
-                  />
-                  <input type="submit" class="submit" value="" />
-                </form>
-              </div>
-            </nav>
-          </header>
+     <!-- Start header -->
+     <header class="top-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbars-rs-food"
+            aria-controls="navbars-rs-food"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbars-rs-food">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="grupamica.html">Grupa mica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="grupamijlocie.html">Grupa mijlocie</a>
+              </li>
+			  <li class="nav-item">
+                <a class="nav-link" href="grupamare.html">Grupa mare</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdown-a"
+                  data-toggle="dropdown"
+                  >Altele</a
+                >
+               <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                  <a class="dropdown-item" href="diplome.html"
+                    >Diplome
+                  </a>
+                  <a class="dropdown-item" href="bine.html">Bine ai venit gradinita </a>
+                </div>
+              </li>
+
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
         </div>
 
         <section class="main">
