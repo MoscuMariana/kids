@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>MSK</title>
+    <link rel="stylesheet" href="css/fancySelect.css" />
+    <link rel="stylesheet" href="css/uniform.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <link
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+      href="css/screen.css"
+    />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336256146659551"
+     crossorigin="anonymous"></script>
+     
+  </head>
+  <body>
+      <!-- Start header -->
+   <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbars-rs-food"
+          aria-controls="navbars-rs-food"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbars-rs-food">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grupamica.html">Grupa mica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grupamijlocie.html">Grupa mijlocie</a>
+            </li>
+      <li class="nav-item">
+              <a class="nav-link" href="grupamare.html">Grupa mare</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown-a"
+                data-toggle="dropdown"
+                >Diplome</a
+              ><!--
+              <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                <a class="dropdown-item" href="reservation.html"
+                  >Evenimente
+                </a>
+                <a class="dropdown-item" href="gallery.html">Galerie</a>
+              </div>
+            </li>
+            -->
+
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+  
+  
+
+
+    <main id="main">
+
+<!--Portofolio start-->
+      <style media="screen">
+
+        body{
+          line-height: 1.5;
+          font-family: sans-serif;
+        }
+        *{
+          margin:0;
+          box-sizing: border-box;
+ 
+        }
+        .container{
+          max-width: 1170px;
+          margin:auto;
+        }
+        .row{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        img{
+          max-width: 100%;
+          vertical-align: middle;
+        }
+        /*.gallery*/
+        .gallery{
+          width: 100%;
+          display: block;
+          min-height: 100vh;
+       
+          padding: 100px 0;
+        }
+        .gallery .gallery-filter{
+          padding: 0 15px;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        .gallery .gallery-filter .filter-item{
+          color: #ea5f8a;
+          font-size: 17px;
+          border: 2px solid#ea5f8a;
+          text-transform: uppercase;
+          display: inline-block;
+          border-radius: 20px;
+          margin-right: 8px;
+          cursor: pointer;
+          padding: 8px 20px 8px 20px;
+          line-height: 1.2;
+          transition: all 0.3s ease;
+        }
+        .gallery .gallery-filter .filter-item.active{
+          color: white;
+          border-color : #ffffff;
+          background: #ea5f8a;
+        }
+        .gallery .gallery-item{
+          width: calc(100% / 3);
+          padding: 15px;
+        
+        }
+        .gallery .gallery-item-inner img{
+          width: 100%;
+          border: 3px solid #d4dad9;
+        }
+        .gallery .gallery-item.show{
+          animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn{
+          0%{
+            opacity: 0;
+          }
+          100%{
+            opacity: 1;
+          }
+        }
+        .gallery .gallery-item.hide{
+          display: none;
+        }
+        
+        /*responsive*/
+        @media(max-width: 491px){
+          .gallery .gallery-item{
+            width: 50%;
+          }
+        }
+        @media(max-width: 467px){
+            .gallery .gallery-item{
+            width: 100%;
+          }
+          .gallery .gallery-filter .filter-item{
+            margin-bottom: 10px;
+          }
+        }
+        
+          </style>
+        </head>
+        <body>
+          <br>
+          <br>
+          <br>
+        
+
+        <section class="gallery">
+          <div class="container">
+            <div class="row">
+              <div class="gallery-filter">
+                <span class="filter-item active" data-filter="all">Toate</span>
+                <span class="filter-item" data-filter="martie">8 Martie</span>
+                <span class="filter-item" data-filter="merit">Diplome de merit</span>
+                <span class="filter-item" data-filter="absolvire">Diplome de absolvire</span>
+                <span class="filter-item" data-filter="verde">Diplome Săptămâna Verde</span>
+                <br>
+                <span class="filter-item" data-filter="altfel">Diplome Școala Altfel</span>
+                <span class="filter-item" data-filter="craciun">Diplome Crăciun</span>
+                <span class="filter-item" data-filter="iunie">Diplome 1 iunie</span>
+              </div>
+            </div>
+            <div class="row">
+              <!-- gallery item start -->
+              <div class="gallery-item martie">
+                <div class="gallery-item-inner">
+                  <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-1.png"  alt="Diploma 8 martie" id="zoomA">
+               <a
+                    href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-1.png"
+                    download
+                  >
+                    <i class="bx bx-download"> Download</i
+                  ></a>
+                </div>
+              </div>
+              <!-- gallery item end -->
+
+              <!-- gallery item start -->
+              <div class="gallery-item martie">
+                <div class="gallery-item-inner">
+                  <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-10-1.jpeg" alt="diplome 8 martie" id="zoomA">
+                  <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-10-1.jpeg"
+                  download>
+                <i class="bx bx-download"> Download</i>
+                </a>
+                </div>
+              </div>
+              <!-- gallery item end -->
+
+              <!-- gallery item start -->
+              <div class="gallery-item martie">
+                <div class="gallery-item-inner">
+                  <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-11-1.jpeg" alt="diplome 8 martie" id="zoomA">
+                  <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-11-1.jpeg"
+                  download>
+                <i class="bx bx-download"> Download</i>
+                </a>
+                </div>
+              </div>
+              <!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-12-1.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-12-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-18-1.jpeg" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-18-1.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-2.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-2.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-3.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-4.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-4.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-5.jpeg" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-5.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-6.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-6.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-7.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-7.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-8.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-8.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-8-martie-model-9-1.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-8-martie-model-9-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-martie-model-13-1.png" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-martie-model-13-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-martie-model-14-1.jpeg" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-martie-model-14-1.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-martie-model-15-1.jpeg" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-martie-model-15-1.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-martie-model-16-1.jpeg" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-martie-model-16-1.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item martie">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome 8  martie/diploma-martie-model-17-1.jpeg" alt="diplome 8 martie" id="zoomA">
+    <a href="/kids/diplome/diplome 8  martie/diploma-martie-model-17-1.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit1-6.jpeg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit1-6.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit2-3.jpeg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit2-3.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit3-3.jpeg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit3-3.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit5-2.jpeg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit5-2.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit6-1.jpg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit6-1.jpg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit7-2.jpeg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit7-2.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diplma-de-merit8-2.jpeg" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diplma-de-merit8-2.jpeg"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item merit">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma de merit/diploma-de-merit-model-8.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diploma de merit/diploma-de-merit-model-8.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma de absolvire model 11.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma de absolvire model 11.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-1.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-10.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-10.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-2.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-2.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-3.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-4.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-4.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-5.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-5.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-6.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-6.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-7.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-7.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-8.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-8.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item absolvire">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-9.png" alt="diplome de merit" id="zoomA">
+    <a href="/kids/diplome/diplome absolvire/diploma-de-absolvire-model-9.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-1-4.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-1-4.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-2-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-2-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-3-2.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-3-2.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-4-4.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-4-4.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-5-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-5-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-6-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-6-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-7-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-7-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-9.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-9.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-model17-1.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-saptamana-verde-model17-1.
+    png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-10-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-10-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-11-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-11-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-12-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-12-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-13-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-13-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-14-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-14-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-15-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-15-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-16-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-16-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item verde">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-9-3.png" alt="diplome scoala verde" id="zoomA">
+    <a href="/kids/diplome/diplome scoala verde/diploma-scoala-verde-model-9-3.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model1-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model1-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model10-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model10-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model11-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model11-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model12-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model12-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model13-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model13-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model14-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model14-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model15-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model15-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model2-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model2-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model4-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model4-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model6-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model6-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model7-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model7-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model8-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model8-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item altfel">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model9-1.png" alt="diplome scoala altfel" id="zoomA">
+    <a href="/kids/diplome/diplome saptamana altfel/diploma-scoala-altfel-model9-1.png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+
+ <!-- gallery item start -->
+ <div class="gallery-item craciun">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun.png"  alt="" id="zoomA">
+ <a
+      href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun.png"
+      download
+    >
+      <i class="bx bx-download"> Download</i
+    ></a>
+    
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (2).png " id="zoomA">
+    <a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (2).png "
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+  <div class="gallery-item-inner">
+    <img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (3).png" alt="diplome craciun" id="zoomA">
+    <a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (3).png"
+    download>
+  <i class="bx bx-download"> Download</i>
+  </a>
+  </div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (4).png" alt="diplome" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (4).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (5).png" alt="diplome" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (5).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (6).png" alt="diplome " id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (6).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (7).png" alt="diplome" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (7).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (8).png" alt="diplome craciun" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (8).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (9).png" alt="diplome " id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (9).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (10).png" alt="diplome craciun" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (10).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (11).png" alt="diplome" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (11).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (12).png" alt="diplome" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (12).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+<!-- gallery item start -->
+<div class="gallery-item craciun">
+<div class="gallery-item-inner">
+<img src="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (14).png" alt="diplome" id="zoomA">
+<a href="/kids/diplome/diploma craciun/Certificat Craciun/Certificat Craciun (14).png"
+download>
+<i class="bx bx-download"> Download</i>
+</a>
+</div>
+</div>
+<!-- gallery item end -->
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar.png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar.png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (10).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (10).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (11).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (11).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (2).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (2).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (3).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (3).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (4).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (4).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (5).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (5).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (6).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (6).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+            
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (7).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (7).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (8).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (8).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+  <!-- gallery item start -->
+  <div class="gallery-item iunie">
+    <div class="gallery-item-inner">
+      <img src="/kids/diplome/diplome 1 iunie/diploma prescolar (9).png"  alt="Diploma 1 iunie" id="zoomA">
+   <a
+        href="/kids/diplome/diplome 1 iunie/diploma prescolar (9).png"
+        download
+      >
+        <i class="bx bx-download"> Download</i
+      ></a>
+    </div>
+  </div>
+  <!-- gallery item end -->
+
+  
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+        
+        <script>
+        
+        
+         const filterContainer = document.querySelector(".gallery-filter"),
+         galleryItems = document.querySelectorAll(".gallery-item");
+        
+         filterContainer.addEventListener("click", (event) =>{
+           if(event.target.classList.contains("filter-item")){
+             // deactivate existing active 'filter-item'
+             filterContainer.querySelector(".active").classList.remove("active");
+             // activate new 'filter-item'
+             event.target.classList.add("active");
+             const filterValue = event.target.getAttribute("data-filter");
+             galleryItems.forEach((item) =>{
+               if(item.classList.contains(filterValue) || filterValue === 'all'){
+                item.classList.remove("hide");
+                 item.classList.add("show");
+               }
+               else{
+                item.classList.remove("show");
+                item.classList.add("hide");
+               }
+             });
+           }
+         });
+        </script>
+      </section>
+      <!-- End Portfolio Section -->
+
+
+      
+    </main>
+    <!-- End #main -->
+
+     
+              
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336256146659551"
+    crossorigin="anonymous"></script>
+<!-- anunt nou 26 -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-1336256146659551"
+    data-ad-slot="8253000353"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jcarousellite.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/fancySelect.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jcarousellite.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/fancySelect.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jcarousellite.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="js/fancySelect.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+     <!-- ALL JS FILES -->
+     <script src="js/jquery-3.2.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <!-- ALL PLUGINS -->
+     <script src="js/jquery.superslides.min.js"></script>
+     <script src="js/images-loded.min.js"></script>
+     <script src="js/isotope.min.js"></script>
+     <script src="js/baguetteBox.min.js"></script>
+     <script src="js/form-validator.min.js"></script>
+     <script src="js/contact-form-script.js"></script>
+     <script src="js/custom.js"></script>
+</body>
+</html>
